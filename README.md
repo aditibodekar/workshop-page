@@ -5,7 +5,9 @@ A full-stack web application for managing and showcasing an AI Robotics Workshop
 Project Structure
 
 workshop-landing/
+
 ├── frontend/   # React + Vite + Tailwind CSS
+
 ├── backend/    # Node.js + Express + TypeScript + MongoDB
 
 Features
