@@ -14,7 +14,7 @@ const iconMap: Record<LearningOutcomeItem["icon"], (props: { className?: string 
 
 const colorMap: Record<LearningOutcomeItem["color"], { bg: string; ring: string; icon: string }> = {
   coral: { bg: "bg-coral-50", ring: "hover:ring-coral-200", icon: "text-coral-500" },
-  violet: { bg: "bg-pink-50", ring: "hover:ring-violet-200", icon: "text-violet-600" },
+  violet: { bg: "bg-violet-50", ring: "hover:ring-violet-200", icon: "text-violet-600" },
   teal: { bg: "bg-teal-50", ring: "hover:ring-teal-200", icon: "text-teal-600" },
   sun: { bg: "bg-sun-50", ring: "hover:ring-sun-200", icon: "text-sun-600" },
 };
