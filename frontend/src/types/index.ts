@@ -10,7 +10,7 @@ export interface LearningOutcomeItem {
   title: string;
   description: string;
   icon: "brain" | "robot" | "code" | "sensor" | "puzzle";
-  color: "coral" | "pink" | "teal" | "sun";
+  color: "coral" | "violet" | "teal" | "sun";
 }
 
 export interface FaqItem {
