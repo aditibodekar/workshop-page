@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply font-body text-ink-800 bg-cream antialiased;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  @apply font-display;
+}
+
+/* Visible keyboard focus for accessibility */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid hsla(338, 92%, 54%, 0.844);
+  outline-offset: 2px;
+  border-radius: 0.5rem;
+}
+
+/* Respect reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.section-shell {
+  @apply max-w-7xl mx-auto px-5 sm:px-8 lg:px-12;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center gap-2 rounded-full bg-coral-500 px-7 py-3.5
+  font-display font-semibold text-white shadow-soft transition-all duration-300
+  hover:bg-coral-600 hover:-translate-y-0.5 hover:shadow-glow active:translate-y-0;
+}
+
+.btn-secondary {
+  @apply inline-flex items-center justify-center gap-2 rounded-full bg-white px-7 py-3.5
+  font-display font-semibold text-violet-600 shadow-card ring-1 ring-violet-100 transition-all duration-300
+  hover:-translate-y-0.5 hover:bg-violet-50 active:translate-y-0;
+}
+
+.tag-pill {
+  @apply inline-flex items-center gap-1.5 rounded-full bg-white/70 px-4 py-1.5 text-sm font-semibold text-violet-700 shadow-sm ring-1 ring-violet-100;
+}
